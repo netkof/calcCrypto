@@ -1,24 +1,17 @@
-# README
+## README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails version 6.1.4.1
+Ruby version 2.6.5
 
-Things you may want to cover:
+Para ejecutar el servidor: 
 
-* Ruby version
+1. ```bundle install```
+2. ```rails server```
+3. abrir el navegador e ir a localhost:3000
 
-* System dependencies
+Para ejecutar los tests:
+```rspec```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+La lógica de frontend se encuentra en ```/app/javascript/helpers.js```
+La lectura de datos por socket se encuentra en ```/app/javascript/channels/prices_channel.js```
+Los Unit Test se encuentrán en ```/spec```

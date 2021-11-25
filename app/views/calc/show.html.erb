@@ -1,0 +1,24 @@
+
+<h1>Inversión:</h1>
+<input type="text" id="investment"></input>
+<button onclick="initialize()">calcular</button>
+<button id="btn-download" onclick="generateAndDownloadCsv()" disabled>descargar</button>
+<table id="mtable"></table>
+
+<% content_for :css do %>
+  <style>
+    table {
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+<% end %>
