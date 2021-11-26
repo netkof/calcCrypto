@@ -32,11 +32,11 @@ window.calculateInterests = async function(btcPrice,ethPrice){
   table = document.getElementById('mtable')
   head = `<tr>
             <th>INVERSIÓN</th>
-            <th>${investment}</th>
+            <th>$ ${investment} dls</th>
           </tr>
           <tr>
-            <th>Bitcoin</th>
-            <th>Ethereum</th>
+            <th>Bitcoin $${btcPrice} dls</th>
+            <th>Ethereum $${ethPrice} dls</th>
           </tr>
         `
   csvContent.push(['Inversión',investment])
