@@ -1,10 +1,15 @@
 
+<% "vista principal, la logica de js se encuentra en /app/javascript/helpers.js" %>
 <h1>Inversión:</h1>
 <input type="text" id="investment"></input>
+
+<% "ejecuta la funcion para solicitar los precios actuales de btc y calcular los intereses" %>
 <button onclick="initialize()">calcular</button>
 <button id="btn-download" onclick="generateAndDownloadCsv()" disabled>descargar</button>
 <table id="mtable"></table>
 
+
+<% "css renderizado dentro de su seccion correspondiente en el layout de la app" %>
 <% content_for :css do %>
   <style>
     table {
