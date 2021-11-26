@@ -6,14 +6,11 @@ class PricesController < ApplicationController
     ok, prices, error = CryptoApiService::get_prices_messari()
     if ok
       ActionCable.server.broadcast("prices", { prices: prices })
+      #se regresa solamente un status de ok
       render json: {ok: true}
     else
       render json: {error: error}, status: 400
     end
   end
 
-  private
-  def request_update_params
-    params.permit(:crypto)
-  end
 end

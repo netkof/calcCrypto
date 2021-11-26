@@ -42,7 +42,7 @@ window.calculateInterests = async function(btcPrice,ethPrice){
           </tr>
         `
   csvContent.push(['Inversión',investment])
-  csvContent.push(['Bitcoin','Ethereum'])
+  csvContent.push([`Bitcoin $${btcPrice} dls`,`Ethereum $${ethPrice} dls`])
   //el calculo se hara sobre el saldo acumulado 
   accumulatedEth = investment
   accumulatedBtc = investment

@@ -14,4 +14,5 @@ Para ejecutar los tests:
 
 La lógica de frontend se encuentra en ```/app/javascript/helpers.js```
 La lectura de datos por socket se encuentra en ```/app/javascript/channels/prices_channel.js```
-Los Unit Test se encuentrán en ```/spec```
+Los Unit Test se encuentran en ```/spec```
+La lógica de conexión con la API de precios de las cryptos se encuentra en ```/app/services/crypto_api_service.rb```
